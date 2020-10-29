@@ -6,19 +6,19 @@ public class Coder
 {
 	public static void main(String args[])
 	{
-		String text = "Hi my name is james";
-		String key = "sup";
+		String text = read (args[2]+".txt");
+		String key = read (args[1]+".txt");
 		key = makeKey(text, key);
-
 		String result = human(text, key);
-
-		System.out.println(result);
-
-		result = human(result, key);
-
-		System.out.println(result);
-
-		System.out.println(toHex(result));
+		
+		if (args[0].equalsIgnoreCase("human"))
+		{
+			System.out.println(result);
+		}
+		if (args[0].equalsIgnoreCase("numOut"))
+		{
+			System.out.println(toHex(result));
+		}
 	}
 
 	public static String makeKey(String text, String key)
