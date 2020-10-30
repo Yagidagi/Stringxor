@@ -6,8 +6,8 @@ public class Coder
 {
 	public static void main(String args[])
 	{
-		String text = read (args[2]+".txt");
-		String key = read (args[1]+".txt");
+		String text = read (args[2]);
+		String key = read (args[1]);
 		key = makeKey(text, key);
 		String result = human(text, key);
 		
