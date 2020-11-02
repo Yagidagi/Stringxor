@@ -1,11 +1,11 @@
 all:
-	javac *.java
+	@javac *.java
 
 run: Coder.class
-	java Coder $(ARGS)
+	@java Coder $(ARGS)
 
 Coder.class: Coder.java
-	javac Coder.java
+	@javac Coder.java
 
 clean: 
-	rm *.class
+	@rm *.class
