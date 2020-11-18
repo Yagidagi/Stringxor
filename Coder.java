@@ -76,6 +76,11 @@ public class Coder
 			while (scanner.hasNextLine()) 
 			{
       				result += scanner.nextLine();
+				if (scanner.hasNextLine())
+				{
+					result += "\n";
+				}
+
 			}	
 		scanner.close();
 		}
